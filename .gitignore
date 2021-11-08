@@ -1,4 +1,5 @@
-.DS_Store
+/.DS_Store
+/__pycache__
 /config_*
 /log.txt
 /data.pickle
