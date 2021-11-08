@@ -1,0 +1,30 @@
+{
+  "owner_id": 392677870,
+  "defaults": {
+    "balance": 100,
+    "bet": 2,
+    "deck_count": 4,
+    "language": "en"
+  },
+  "lang_files": {
+    "en": "lang_en.json",
+    "ru": "lang_ru.json"
+  },
+  "logging": {
+    "log_file": "log.txt",
+    "log_length": 10
+  },
+  "persistence": {
+    "data_file": "data.pickle"
+  },
+  "settings": {
+    "diller_hit_on": 16,
+    "low_deck_threshold": 0.2,
+    "max_bet": 100,
+    "min_bet": 2,
+    "rating_places": 10
+  },
+  "token": {
+    "dev": "YOUR-TOKEN-HERE"
+  }
+}
