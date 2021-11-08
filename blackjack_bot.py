@@ -546,7 +546,8 @@ def settings(update: Update, context: CallbackContext) -> None:
             b_language_caption = messages_txt[language]['b_language_caption']
             txt_lang = ': '.join([b_language, b_language_caption])
             txt_m_sett_title = messages_txt[language]['txt_m_sett_title']
-            txt_m_sett_title_game = ' '.join([emojize(':gear:'), txt_m_sett_title])
+            txt_m_sett_title_game = ' '.join([emojize(':gear:'),
+                                              txt_m_sett_title])
             q_choice = messages_txt[language]['q_choice']
             q_sett_lang = messages_txt[language]['q_sett_lang']
             update.callback_query.answer(' - '.join([q_choice, q_sett_lang]))
