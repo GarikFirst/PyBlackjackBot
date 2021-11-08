@@ -530,17 +530,27 @@ def settings(update: Update, context: CallbackContext) -> None:
         # For menu buttons
         setting = data.split('.')[1]
         if setting == 'language':
-            if language == 'ru':
-                context.user_data['language'] = 'en'
+            language_codes = list(config['lang_files'].keys())
+            language_count = len(language_codes)
+            n = language_codes.index(language)
+            if n + 1 < language_count:
+                language = language_codes[n + 1]
+                print(language)
             else:
-                context.user_data['language'] = 'ru'
+                language = language_codes[0]
+                print(language)
+            context.user_data['language'] = language
             # Get new language for callback query answer
             language, _ = get_user_settings(context)
             b_language = messages_txt[language]['b_language']
             b_language_caption = messages_txt[language]['b_language_caption']
             txt_lang = ': '.join([b_language, b_language_caption])
+            txt_m_sett_title = messages_txt[language]['txt_m_sett_title']
+            txt_m_sett_title_game = ' '.join([emojize(':gear:'), txt_m_sett_title])
             q_choice = messages_txt[language]['q_choice']
+            q_sett_lang = messages_txt[language]['q_sett_lang']
             update.callback_query.answer(' - '.join([q_choice, q_sett_lang]))
+            msg_status.edit_text(txt_m_sett_title_game)
             msg_dealer.edit_text(txt_lang)
             log_event(update, context, f'changes language: {language}')
         elif setting == 'deck_count':
