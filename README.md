@@ -57,3 +57,5 @@ This bot has several secret command, wich can be sent to bot by owner and help y
 | rating_places | how much lines will be in scoreboard                                   |
 | **token**                                                                              |
 | environment key | token for that environment                                           |
+
+Copyright © 2021 Igor Bulekov
