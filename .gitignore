@@ -1,0 +1,4 @@
+.DS_Store
+/config_*
+/log.txt
+/data.pickle
