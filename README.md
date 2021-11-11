@@ -12,7 +12,7 @@ You can see this bot in action here: https://t.me/blackjack_gamebot.
 
 ### Install 
 
-It's really simple just do following steps to run from source (you need python3 & token from ), you need to specify your _bot token_ in config file.
+It's really simple just do following steps to run from source (you need python3 & token from your bot), you need to specify your _bot token_ in config file.
 1. `git clone https://github.com/GarikFirst/PyBlackjackBot.git` - clone this repo.
 2. `pip3 install -r requirments.txt` - install requirments.
 3. specify your bot _token_ in **token** key in `config.json`.
