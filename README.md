@@ -20,7 +20,7 @@ It's really simple just do following steps to run from source (you need python3 
 
 ### Launch the bot
 
-1. `python 3 -c CONFIG-FILE -e YOUR-ENV-FROM-CONFIG` - defaults (no keys specified) are **config.json** and **dev** accoringly
+1. `python 3 blackjack_bot.py -c CONFIG-FILE -e YOUR-ENV-FROM-CONFIG` - defaults (no keys specified) are **config.json** and **dev** accoringly
 2. go and check your bot in Telegram client by sending /start
 
 ## Secret commands
