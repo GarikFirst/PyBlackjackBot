@@ -1,6 +1,6 @@
 # PyBlackjackBot Blackjack bot for Telegram
 
-Simple telegram bot on python3 with inline keyboards and user scoreboard. 
+Simple telegram bot - blackjack game via Telegram on python3 with inline keyboards and user scoreboard. 
 
 This bot uses the [python telegram bot](https://python-telegram-bot.org) framework to make Telegram API calls.
 
